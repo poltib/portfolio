@@ -24,9 +24,10 @@ a:hover{color:rgb(56,145,226);}
 	text-indent: -10000px;
 }
 
+body{font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; line-height: 1.5em; color:rgb(50,100,100);}
+
 p{
 	margin-bottom: 1em;
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 	a{
 		border-bottom: 1px dotted silver;
 	}
@@ -35,7 +36,7 @@ p{
 	}
 }
 
-h1,h2,h3,h4,h5,h6{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; margin-bottom:1em;}
+h1,h2,h3,h4,h5,h6{font-family: "Trebuchet MD","Helvetica Neue", Helvetica, Arial, sans-serif; margin-bottom:1em; color:black;}
 
 h1      { font-size: 2em;}
 h2      { font-size: 1.5em;}
@@ -47,10 +48,9 @@ h6      { font-size: 0.75em;}
 
 
 #logo{
-	@include span-columns(4,10);
+	@include span-columns(3,10);
 	margin: 2em 0;
 	text-align: right;
-	border-right: 1em solid rgba(0,0,0,0.1);
 	h1{margin:0;}
 
 	
@@ -61,10 +61,40 @@ header:after{
 	display:block;
 	clear:both;
 }
+li.contact{
+	a:before{
+		content: url('../img/envelop.png');
+		margin-right: 0.3em;
+	}
+}
+li.blog{
+	a:before{
+		content: url('../img/book.png');
+		margin-right: 0.3em;
+	}
+}
+li.project{
+	a:before{
+		content: url('../img/pencil.png');
+		margin-right: 0.3em;
+	}
+}
+li.home{
+	a:before{
+		content: url('../img/home.png');
+		margin-right: 0.3em;
+	}
+}
+li.about{
+	a:before{
+		content: url('../img/profile.png');
+		margin-right: 0.3em;
+	}
+}
 
 nav{
 	position:absolute;
-	top:0;
+	top:1em;
 	right:1em;
     ul{
 		padding:0;
@@ -80,8 +110,10 @@ nav{
 				border-bottom: 3px solid rgba(0,0,0,0.1);
 				@include transition((border-bottom, 0.5s)(color, 0.5s));
 			}
-			a:hover{
-				color:rgba(0,0,0,0.6);
+		}
+		li:hover, li.selected{
+			a{
+				color:rgb(56,145,226);
 				border-bottom: 3px solid rgba(0,0,0,0.6);
 			}
 		}
@@ -95,6 +127,10 @@ section.hi{
 }
 
 section.project{
+	// h2:before{
+	// 	content:url('../img/arrow-down-right2.png');
+	// 	margin-right: 0.3em;
+	// }
 	div.text{
 		@include span-columns(3,10);
 	}
@@ -114,6 +150,7 @@ section.project{
 
 		figure{
 			margin-bottom: 1em;
+			padding:0;
 			background-color: rgba(0,0,0,0.05);
 			img{max-width: 100%;}
 			position: relative;
@@ -126,7 +163,6 @@ section.project{
 			figcaption{
 				opacity:1;
 				bottom:0;
-				height:40%;
 			}
 		}
 		figcaption{
@@ -134,10 +170,9 @@ section.project{
 			background-color: rgba(0,0,0,0.8);
 			opacity:0;
 			position:absolute;
-			height:0;
 			bottom:-35%;
 			left:0;
-			@include transition((bottom, 0.5s),(height, 0.5s), (opacity, 0.5s));
+			@include transition((bottom, 0.5s), (opacity, 0.5s));
 			h3{
 				color:rgb(56,145,226);
 				padding:0.2em;
@@ -162,12 +197,19 @@ section.news{
 	h2{
 		margin-bottom: 1em;
 	}
+	h2:before{
+		content:url('../img/books.png');
+		margin-right: 0.3em;
+	}
 	article.first{
 		@include span-columns(4,10);
 	}
 	article{
+		margin-bottom: 0.5em;
+		p{
+			color:rgb(50,100,100);
+		}
 		h3 span{
-			font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 			font-size: 0.7em;
 		}
 		position: relative;
@@ -176,13 +218,18 @@ section.news{
 		span.more{
 			position:absolute;
 			bottom:1em;
-			right:-5em;
+			right:-6em;
 			font-size: 0.9em;
 			@include single-transition(right, 0.5s);
 		}
 	}
 	article:hover{
-		p{color:black;}
+		h3{
+			color:rgb(56,145,226);
+			span{
+				color:rgb(226,145,56);
+			}
+		}
 		span.more{
 			right:1em;
 		}
@@ -219,6 +266,7 @@ footer{
 	text-align: right;
 	img{
 		opacity:0.7;
+		margin-left: 0.5em;
 	}
 	img:hover{
 		opacity:1;
@@ -229,11 +277,10 @@ footer{
 
 
 .presentation{
-	figure{
-		@include border-radius(100%);
-		overflow:hidden;
+	div{
 		@include span-columns(2 omega,10);
-		img{max-width: 100%;}
+		img{max-width: 100%;box-shadow: 0px 0px 8px;@include border-radius(100%);}
+		margin-bottom: 1em;
 	}
 	p,h2{
 		@include span-columns(8,10);
@@ -254,5 +301,45 @@ footer{
 		@include span-columns(2.3,10);
 		&:nth-child(4) { @include omega; }
 	}
+}
+
+//contact
+
+form{
+	ul li:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+	ul li{
+		margin-bottom: 0.5em;
+		@include span-columns(6,6);
+	}
+	fieldset{
+		border:none;
+		margin:0;
+		padding:0;
+	}
+   label{
+   	@include span-columns(2,6);
+   	text-align: right;
+   	line-height: 24px;
+   }
+   input, textarea{
+   	@include span-columns(3.9 omega,6);
+   	
+   }
+   input[type="submit"]{
+   	margin-left: 35%;
+   }
+}
+
+
+
+
+//blog
+
+article.blog{
+	@include span-columns(7 omega, 10);
 }
 
