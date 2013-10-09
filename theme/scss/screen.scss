@@ -127,6 +127,9 @@ section.hi{
 }
 
 section.project{
+	h2{
+		margin-top: 0.5em;
+	}
 	// h2:before{
 	// 	content:url('../img/arrow-down-right2.png');
 	// 	margin-right: 0.3em;
@@ -141,15 +144,13 @@ section.project{
 	}
 	.photos-right{
 		@include span-columns(7 omega,10);
+		margin-top: 0.5em;
 	}
 
 	.photos-left{
 		@include span-columns(3,10);
 	}
 
-	.photos-center{
-		@include span-columns(4,10);
-	}
 	div{
 
 		figure{
@@ -227,7 +228,7 @@ section.news{
 			@include single-transition(right, 0.5s);
 		}
 	}
-	article:hover{
+	a article:hover{
 		h3{
 			color:rgb(56,145,226);
 			span{
@@ -268,34 +269,41 @@ footer{
 	font-size: 0.8em;
 	margin-bottom: 1em;
 	text-align: right;
-	a{opacity:0.7;}
-	a.google{
-		content: url('../img/gg.png');
+	a{
+		margin-left: 1.5em;
+		opacity:0.7;
+		width:32px;
+		height:32px; 
+		text-indent: 10000px;
+		display:inline-block;
 	}
-	a.facebook{
-		content: url('../img/fb.png');
+	.google{
+		background-image: url('../img/gg.png');
 	}
-	a.github{
-		content: url('../img/github.png');
+	.facebook{
+		background-image: url('../img/fb.png');
 	}
-	a.linkedin{
-		content: url('../img/linkedin.png');
+	.github{
+		background-image: url('../img/github.png');
+	}
+	.linkedin{
+		background-image: url('../img/linkedin.png');
 	}
 
-	a.google:hover{
-		content: url('../img/ggh.png');
+	.google:hover{
+		background-image: url('../img/ggh.png');
 		opacity:1;
 	}
-	a.facebook:hover{
-		content: url('../img/fbh.png');
+	.facebook:hover{
+		background-image: url('../img/fbh.png');
 		opacity:1;
 	}
-	a.github:hover{
-		content: url('../img/github.png');
+	.github:hover{
+		background-image: url('../img/github.png');
 		opacity:1;
 	}
-	a.linkedin:hover{
-		content: url('../img/linkedinh.png');
+	.linkedin:hover{
+		background-image: url('../img/linkedinh.png');
 		opacity:1;
 	}
 }
@@ -314,12 +322,6 @@ footer{
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-}
-
-.presentation:after{
-	content:"";
-	display:block;
-	clear:both;
 }
 
 .competences{
@@ -361,11 +363,12 @@ form{
 	//@include border-radius(3px);
 	border:none;
 	padding:0.5em 0;
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgb(56,145,226);
+	color:white;
+	opacity:0.8;
    }
    input[type="submit"]:hover, input[type="submit"]:focus{
-		background-color: rgb(56,145,226);
-		color:white;
+		opacity:1;
 	}
 }
 
@@ -390,12 +393,56 @@ section.blog{
 }
 
 
-span.comm:before{
+.comm:before{
 	content: url('../img/bubbles2.png');
 	margin-right:0.3em;
 }
 
-span.comm{
+.comm{
 	margin:1em 0;
+}
+
+
+//comments
+
+div.comments{
+	border-top: 0.3em solid rgba(0,0,0,0.1);
+	h4{margin:1em 0;}
+
+	ul{
+		list-style-type: none;
+		padding:0;
+	}
+}
+
+
+li.comment{
+	border-left: 0.3em solid rgba(0,0,0,0.1);
+	padding-left: 1.5em;
+	article{
+		h5{
+			margin-bottom: 0.1em;
+			a{
+				border-bottom: 1px dotted silver;
+			}
+			a:hover{
+				border-bottom: 1px dotted rgb(56,145,226);
+			}
+		}
+		span{
+			color:rgb(226,145,56);
+			font-size: 0.8em;
+		}
+		float: none;
+		>a{
+			text-align:right;
+			background-color:rgba(226,145,56,0.6);
+			padding:0.3em;
+			color:white;
+		}
+		>a:hover{
+			background-color:rgba(226,145,56,1);
+		}
+	}
 }
 
