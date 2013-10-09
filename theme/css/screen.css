@@ -423,8 +423,8 @@ table {
   position: relative;
   padding: 0;
   *zoom: 1;
-  max-width: 49em;
-  _width: 49em;
+  max-width: 59em;
+  _width: 59em;
   padding-left: 1em;
   padding-right: 1em;
   margin-left: auto;
@@ -814,41 +814,42 @@ footer a {
 /* line 269, ../scss/screen.scss */
 footer .google {
   background-image: url("../img/gg.png");
+  margin-left: 0;
 }
-/* line 272, ../scss/screen.scss */
+/* line 273, ../scss/screen.scss */
 footer .facebook {
   background-image: url("../img/fb.png");
 }
-/* line 275, ../scss/screen.scss */
+/* line 276, ../scss/screen.scss */
 footer .github {
   background-image: url("../img/github.png");
 }
-/* line 278, ../scss/screen.scss */
+/* line 279, ../scss/screen.scss */
 footer .linkedin {
   background-image: url("../img/linkedin.png");
 }
-/* line 282, ../scss/screen.scss */
+/* line 283, ../scss/screen.scss */
 footer .google:hover {
   background-image: url("../img/ggh.png");
   opacity: 1;
 }
-/* line 286, ../scss/screen.scss */
+/* line 287, ../scss/screen.scss */
 footer .facebook:hover {
   background-image: url("../img/fbh.png");
   opacity: 1;
 }
-/* line 290, ../scss/screen.scss */
+/* line 291, ../scss/screen.scss */
 footer .github:hover {
   background-image: url("../img/github.png");
   opacity: 1;
 }
-/* line 294, ../scss/screen.scss */
+/* line 295, ../scss/screen.scss */
 footer .linkedin:hover {
   background-image: url("../img/linkedinh.png");
   opacity: 1;
 }
 
-/* line 304, ../scss/screen.scss */
+/* line 305, ../scss/screen.scss */
 .presentation div {
   width: 18.36735%;
   float: right;
@@ -857,7 +858,7 @@ footer .linkedin:hover {
   display: inline;
   margin-bottom: 1em;
 }
-/* line 306, ../scss/screen.scss */
+/* line 307, ../scss/screen.scss */
 .presentation div img {
   max-width: 100%;
   box-shadow: 0px 0px 8px;
@@ -867,7 +868,7 @@ footer .linkedin:hover {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 309, ../scss/screen.scss */
+/* line 310, ../scss/screen.scss */
 .presentation p, .presentation h2 {
   width: 79.59184%;
   float: left;
@@ -877,18 +878,18 @@ footer .linkedin:hover {
   margin-bottom: 1em;
 }
 
-/* line 317, ../scss/screen.scss */
+/* line 318, ../scss/screen.scss */
 .competences h2 {
   margin-bottom: 1em;
 }
-/* line 318, ../scss/screen.scss */
+/* line 319, ../scss/screen.scss */
 .competences article {
   width: 22.85714%;
   float: left;
   margin-right: 2.04082%;
   display: inline;
 }
-/* line 320, ../scss/screen.scss */
+/* line 321, ../scss/screen.scss */
 .competences article:nth-child(4) {
   float: right;
   margin-right: 0;
@@ -896,13 +897,13 @@ footer .linkedin:hover {
   display: inline;
 }
 
-/* line 327, ../scss/screen.scss */
+/* line 328, ../scss/screen.scss */
 form ul li:after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 332, ../scss/screen.scss */
+/* line 333, ../scss/screen.scss */
 form ul li {
   margin-bottom: 1em;
   width: 100%;
@@ -910,13 +911,13 @@ form ul li {
   margin-right: 3.44828%;
   display: inline;
 }
-/* line 336, ../scss/screen.scss */
+/* line 337, ../scss/screen.scss */
 form fieldset {
   border: none;
   margin: 0;
   padding: 0;
 }
-/* line 341, ../scss/screen.scss */
+/* line 342, ../scss/screen.scss */
 form label {
   width: 31.03448%;
   float: left;
@@ -925,7 +926,7 @@ form label {
   text-align: right;
   line-height: 24px;
 }
-/* line 346, ../scss/screen.scss */
+/* line 347, ../scss/screen.scss */
 form input, form textarea {
   width: 64.13793%;
   float: right;
@@ -933,7 +934,7 @@ form input, form textarea {
   *margin-left: -1em;
   display: inline;
 }
-/* line 350, ../scss/screen.scss */
+/* line 351, ../scss/screen.scss */
 form input[type="submit"] {
   width: 30%;
   border: none;
@@ -942,99 +943,142 @@ form input[type="submit"] {
   color: white;
   opacity: 0.8;
 }
-/* line 359, ../scss/screen.scss */
+/* line 360, ../scss/screen.scss */
 form input[type="submit"]:hover, form input[type="submit"]:focus {
   opacity: 1;
 }
 
-/* line 370, ../scss/screen.scss */
+/* line 371, ../scss/screen.scss */
 section.blog article {
   margin-bottom: 2em;
   overflow: visible;
 }
-/* line 373, ../scss/screen.scss */
+/* line 374, ../scss/screen.scss */
 section.blog article h3:before {
   content: url("../img/bookmarks.png");
   position: absolute;
   left: -1.5em;
 }
-/* line 380, ../scss/screen.scss */
+/* line 381, ../scss/screen.scss */
 section.blog article:hover span.comm {
   color: #3891e2;
 }
 
-/* line 385, ../scss/screen.scss */
+/* line 386, ../scss/screen.scss */
 .comm:before {
   content: url("../img/bubbles2.png");
   margin-right: 0.3em;
 }
 
-/* line 390, ../scss/screen.scss */
+/* line 391, ../scss/screen.scss */
 .comm {
   margin: 1em 0;
 }
 
-/* line 397, ../scss/screen.scss */
+/* line 398, ../scss/screen.scss */
 div.comments {
   border-top: 0.3em solid rgba(0, 0, 0, 0.1);
 }
-/* line 399, ../scss/screen.scss */
+/* line 400, ../scss/screen.scss */
 div.comments h4 {
   margin: 1em 0;
 }
-/* line 401, ../scss/screen.scss */
+/* line 402, ../scss/screen.scss */
 div.comments ul {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 408, ../scss/screen.scss */
+/* line 409, ../scss/screen.scss */
 li.comment {
   border-left: 0.3em solid rgba(0, 0, 0, 0.1);
   padding-left: 1.5em;
 }
-/* line 411, ../scss/screen.scss */
+/* line 412, ../scss/screen.scss */
 li.comment article {
   float: none;
 }
-/* line 412, ../scss/screen.scss */
+/* line 413, ../scss/screen.scss */
 li.comment article h5 {
   margin-bottom: 0.1em;
 }
-/* line 414, ../scss/screen.scss */
+/* line 415, ../scss/screen.scss */
 li.comment article h5 a {
   border-bottom: 1px dotted silver;
 }
-/* line 417, ../scss/screen.scss */
+/* line 418, ../scss/screen.scss */
 li.comment article h5 a:hover {
   border-bottom: 1px dotted #3891e2;
 }
-/* line 421, ../scss/screen.scss */
+/* line 422, ../scss/screen.scss */
 li.comment article span {
   color: #e29138;
   font-size: 0.8em;
 }
-/* line 426, ../scss/screen.scss */
+/* line 427, ../scss/screen.scss */
 li.comment article > a {
   text-align: right;
   background-color: rgba(226, 145, 56, 0.6);
   padding: 0.3em;
   color: white;
 }
-/* line 432, ../scss/screen.scss */
+/* line 433, ../scss/screen.scss */
 li.comment article > a:hover {
   background-color: #e29138;
 }
 
-/* line 447, ../scss/screen.scss */
+/* line 442, ../scss/screen.scss */
+.projets article {
+  position: relative;
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  border-bottom: 0.3em solid rgba(0, 0, 0, 0.1);
+}
+/* line 444, ../scss/screen.scss */
+.projets article a {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  text-align: right;
+  background-color: rgba(226, 145, 56, 0.6);
+  padding: 0.3em;
+  color: white;
+}
+/* line 453, ../scss/screen.scss */
+.projets article a:hover {
+  background-color: #e29138;
+}
+/* line 457, ../scss/screen.scss */
+.projets article:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+/* line 459, ../scss/screen.scss */
+.projets article figure {
+  width: 48.27586%;
+  float: left;
+  margin-right: 3.44828%;
+  display: inline;
+}
+/* line 461, ../scss/screen.scss */
+.projets article figure img {
+  max-width: 96%;
+  border: 0.3em solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 474, ../scss/screen.scss */
 .projet article p {
   position: relative;
 }
-/* line 448, ../scss/screen.scss */
+/* line 475, ../scss/screen.scss */
 .projet article p:first-child {
   margin-top: 0;
 }
-/* line 451, ../scss/screen.scss */
+/* line 478, ../scss/screen.scss */
 .projet article figure {
   position: absolute;
   left: 0;
@@ -1043,19 +1087,19 @@ li.comment article > a:hover {
   margin-right: 2.04082%;
   display: inline;
 }
-/* line 456, ../scss/screen.scss */
+/* line 483, ../scss/screen.scss */
 .projet article img {
   max-width: 98%;
   border: 0.3em solid rgba(0, 0, 0, 0.1);
 }
-/* line 461, ../scss/screen.scss */
+/* line 488, ../scss/screen.scss */
 .projet article:after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* line 467, ../scss/screen.scss */
+/* line 494, ../scss/screen.scss */
 .description {
   width: 59.18367%;
   float: right;

@@ -268,6 +268,7 @@ footer{
 	}
 	.google{
 		background-image: url('../img/gg.png');
+		margin-left:0
 	}
 	.facebook{
 		background-image: url('../img/fb.png');
@@ -437,7 +438,33 @@ li.comment{
 
 
 //projets
-
+.projets{
+	article{
+		position: relative;
+		a{	
+			position:absolute;
+			top:1em;
+			right:1em;
+			text-align:right;
+			background-color:rgba(226,145,56,0.6);
+			padding:0.3em;
+			color:white;
+		}
+		a:hover{
+			background-color:rgba(226,145,56,1);
+		}
+		@include span-columns(6,12);
+		&:nth-child(2n) { @include omega; }
+		border-bottom: 0.3em solid rgba(0,0,0,0.1);
+		figure{
+			@include span-columns(3,6);
+			img{
+				max-width: 96%;
+				border: 0.3em solid rgba(0,0,0,0.1);
+			}
+		}
+	}
+}
 
 
 //projet
