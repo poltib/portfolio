@@ -12,43 +12,38 @@
 			<nav role="navigation">
 				<h2 class="hidden">Navigation</h2>
 				<ul><!-- 
-					 --><li class="home"><a href="index.html" title="home">Home</a></li><!--  
-					 --><li class="about"><a href="about.html" title="Présentation">About</a></li><!-- 
-					 --><li class="project"><a href="projets.html" title="Aperçu des projets réalisé">Projets</a></li><!-- 
-					 --><li class="blog"><a href="blog.html" title="Section blog">Blog</a></li><!-- 
-					 --><li class="contact selected"><a href="contact.html" title="Contact">Contact</a></li><!-- 
+					 --><li><a href="index.html" title="home" class="homeIcone">Home</a></li><!--  
+					 --><li><a href="about.html" title="Présentation" class="aboutIcone">About</a></li><!-- 
+					 --><li><a href="projets.html" title="Aperçu des projets réalisé" class="projectIcone">Projets</a></li><!-- 
+					 --><li><a href="blog.html" title="Section blog" class="blogIcone">Blog</a></li><!-- 
+					 --><li><a href="contact.html" title="Contact" class="contactIcone selected">Contact</a></li><!-- 
 				 --></ul>
 			</nav>
 		</header>
-		<section class="content" role="content">
-			<h2 class="hidden">Contenu</h2>
-			<section class="hi">
-				<div class="text">
-					<h2>Contact</h2>
-					<p>Si vous voulez me contacter vous pouvez <a href="mailto:thiry.jeremy@gmail.com">m'envoyer un mail</a>, me contacter sur les réseaux sociaux ou m'envoyer un message à l'aide de ce formulaire.</p>
-					<form action="#">
-						<fieldset>
-							<ul>
-								<li>
-									<label for="nom">Nom :</label><input type="text" name="nom" id="nom">
-								</li>
-								<li>
-									<label for="sujet">Sujet :</label><input type="text" name="sujet" id="sujet">
-								</li>
-								<li>
-									<label for="request">Votre message :</label>
-									<textarea name="request" id="request" cols="30" rows="10"></textarea>
-								</li>
-								<li>
-									<input type="submit" value="Envoyer">
-								</li>
-							</ul>
-						</fieldset>
-					</form>
-				</div>
-			</section>
-
-			
+		<section class="hi">
+			<div class="text">
+				<h2 class="contactIcone">Contact</h2>
+				<p>Si vous voulez me contacter vous pouvez <a href="mailto:thiry.jeremy@gmail.com">m'envoyer un mail</a>, me contacter sur les réseaux sociaux ou m'envoyer un message à l'aide de ce formulaire.</p>
+				<form action="#">
+					<fieldset>
+						<ul>
+							<li>
+								<label for="nom">Nom :</label><input type="text" name="nom" id="nom">
+							</li>
+							<li>
+								<label for="sujet">Sujet :</label><input type="text" name="sujet" id="sujet">
+							</li>
+							<li>
+								<label for="request">Votre message :</label>
+								<textarea name="request" id="request" cols="30" rows="10"></textarea>
+							</li>
+							<li>
+								<input type="submit" value="Envoyer">
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+			</div>
 		</section>
 		<footer role="footer">
 			<p>Jérémy Thiry 2013</p>

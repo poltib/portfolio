@@ -61,35 +61,25 @@ header:after{
 	display:block;
 	clear:both;
 }
-li.contact{
-	a:before{
-		content: url('../img/envelop.png');
-		margin-right: 0.3em;
-	}
+.contactIcone:before{
+	content: url('../img/envelop.png');
+	margin-right: 0.3em;
 }
-li.blog{
-	a:before{
-		content: url('../img/book.png');
-		margin-right: 0.3em;
-	}
+.blogIcone:before{
+	content: url('../img/book.png');
+	margin-right: 0.3em;
 }
-li.project{
-	a:before{
-		content: url('../img/pencil.png');
-		margin-right: 0.3em;
-	}
+.projectIcone:before{
+	content: url('../img/pencil.png');
+	margin-right: 0.3em;
 }
-li.home{
-	a:before{
-		content: url('../img/home.png');
-		margin-right: 0.3em;
-	}
+.homeIcone:before{
+	content: url('../img/home.png');
+	margin-right: 0.3em;
 }
-li.about{
-	a:before{
-		content: url('../img/profile.png');
-		margin-right: 0.3em;
-	}
+.aboutIcone:before{
+	content: url('../img/profile.png');
+	margin-right: 0.3em;
 }
 
 nav{
@@ -111,11 +101,10 @@ nav{
 				@include transition((border-bottom, 0.5s)(color, 0.5s));
 			}
 		}
-		li:hover, li.selected{
-			a{
+		.selected, a:hover{
 				color:rgb(56,145,226);
 				border-bottom: 3px solid rgba(0,0,0,0.6);
-			}
+
 		}
 	}
 }
@@ -126,7 +115,7 @@ section.hi{
 	}
 }
 
-section.project{
+section.projects{
 	h2{
 		margin-top: 0.5em;
 	}
@@ -268,7 +257,7 @@ section:after{
 footer{
 	font-size: 0.8em;
 	margin-bottom: 1em;
-	text-align: right;
+	text-align: center;
 	a{
 		margin-left: 1.5em;
 		opacity:0.7;
@@ -446,3 +435,33 @@ li.comment{
 	}
 }
 
+
+//projets
+
+
+
+//projet
+
+.projet{
+	article{
+		p{position:relative;}
+		p:first-child{
+			margin-top: 0;
+		}
+		figure{
+			position:absolute;
+			left:0;
+			@include span-columns(4,10);
+		}
+		img{
+			max-width: 98%;
+			border: 0.3em solid rgba(0,0,0,0.1);
+		}
+	}
+	article:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+}
+.description{@include span-columns(6 omega,10);}
