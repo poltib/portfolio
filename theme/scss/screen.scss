@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+
 @import "compass";
 @import "base";
 @import "normalize"; 
@@ -140,7 +140,11 @@ section.project{
 		clear:both;
 	}
 	.photos-right{
-		@include span-columns(3 omega,10);
+		@include span-columns(7 omega,10);
+	}
+
+	.photos-left{
+		@include span-columns(3,10);
 	}
 
 	.photos-center{
@@ -218,7 +222,7 @@ section.news{
 		span.more{
 			position:absolute;
 			bottom:1em;
-			right:-6em;
+			right:-8em;
 			font-size: 0.9em;
 			@include single-transition(right, 0.5s);
 		}
@@ -264,11 +268,34 @@ footer{
 	font-size: 0.8em;
 	margin-bottom: 1em;
 	text-align: right;
-	img{
-		opacity:0.7;
-		margin-left: 0.5em;
+	a{opacity:0.7;}
+	a.google{
+		content: url('../img/gg.png');
 	}
-	img:hover{
+	a.facebook{
+		content: url('../img/fb.png');
+	}
+	a.github{
+		content: url('../img/github.png');
+	}
+	a.linkedin{
+		content: url('../img/linkedin.png');
+	}
+
+	a.google:hover{
+		content: url('../img/ggh.png');
+		opacity:1;
+	}
+	a.facebook:hover{
+		content: url('../img/fbh.png');
+		opacity:1;
+	}
+	a.github:hover{
+		content: url('../img/github.png');
+		opacity:1;
+	}
+	a.linkedin:hover{
+		content: url('../img/linkedinh.png');
 		opacity:1;
 	}
 }
@@ -312,7 +339,7 @@ form{
 		clear:both;
 	}
 	ul li{
-		margin-bottom: 0.5em;
+		margin-bottom: 1em;
 		@include span-columns(6,6);
 	}
 	fieldset{
@@ -330,8 +357,16 @@ form{
    	
    }
    input[type="submit"]{
-   	margin-left: 35%;
+   	width:30%;
+	//@include border-radius(3px);
+	border:none;
+	padding:0.5em 0;
+	background-color: rgba(0,0,0,0.1);
    }
+   input[type="submit"]:hover, input[type="submit"]:focus{
+		background-color: rgb(56,145,226);
+		color:white;
+	}
 }
 
 
@@ -339,7 +374,28 @@ form{
 
 //blog
 
-article.blog{
-	@include span-columns(7 omega, 10);
+section.blog{
+	article{
+		margin-bottom: 2em;
+		overflow: visible;
+		h3:before{
+			content:url('../img/bookmarks.png');
+			position:absolute;
+			left: -1.5em;
+		}
+	}
+	article:hover{
+		span.comm{color:rgb(56,145,226);}
+	}
+}
+
+
+span.comm:before{
+	content: url('../img/bubbles2.png');
+	margin-right:0.3em;
+}
+
+span.comm{
+	margin:1em 0;
 }
 

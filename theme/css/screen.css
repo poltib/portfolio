@@ -2,71 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
 /* normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -703,20 +638,27 @@ section.project .photos:after {
 }
 /* line 142, ../scss/screen.scss */
 section.project .photos-right {
-  width: 28.57143%;
+  width: 69.38776%;
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
 }
 /* line 146, ../scss/screen.scss */
+section.project .photos-left {
+  width: 28.57143%;
+  float: left;
+  margin-right: 2.04082%;
+  display: inline;
+}
+/* line 150, ../scss/screen.scss */
 section.project .photos-center {
   width: 38.77551%;
   float: left;
   margin-right: 2.04082%;
   display: inline;
 }
-/* line 151, ../scss/screen.scss */
+/* line 155, ../scss/screen.scss */
 section.project div figure {
   margin-bottom: 1em;
   padding: 0;
@@ -729,20 +671,20 @@ section.project div figure {
   -o-transition: border 0.5s;
   transition: border 0.5s;
 }
-/* line 155, ../scss/screen.scss */
+/* line 159, ../scss/screen.scss */
 section.project div figure img {
   max-width: 100%;
 }
-/* line 161, ../scss/screen.scss */
+/* line 165, ../scss/screen.scss */
 section.project div figure:hover {
   border: 0.3em solid rgba(0, 0, 0, 0.8);
 }
-/* line 163, ../scss/screen.scss */
+/* line 167, ../scss/screen.scss */
 section.project div figure:hover figcaption {
   opacity: 1;
   bottom: 0;
 }
-/* line 168, ../scss/screen.scss */
+/* line 172, ../scss/screen.scss */
 section.project div figcaption {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -755,13 +697,13 @@ section.project div figcaption {
   -o-transition: bottom 0.5s, opacity 0.5s;
   transition: bottom, 0.5s, opacity, 0.5s;
 }
-/* line 176, ../scss/screen.scss */
+/* line 180, ../scss/screen.scss */
 section.project div figcaption h3 {
   color: #3891e2;
   padding: 0.2em;
   margin: 0;
 }
-/* line 181, ../scss/screen.scss */
+/* line 185, ../scss/screen.scss */
 section.project div figcaption p {
   padding: 0.2em;
   margin: 0;
@@ -769,29 +711,29 @@ section.project div figcaption p {
   font-weight: lighter;
 }
 
-/* line 191, ../scss/screen.scss */
+/* line 195, ../scss/screen.scss */
 section.content {
   margin: 0;
   border: 0;
 }
 
-/* line 197, ../scss/screen.scss */
+/* line 201, ../scss/screen.scss */
 section.news h2 {
   margin-bottom: 1em;
 }
-/* line 200, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 section.news h2:before {
   content: url("../img/books.png");
   margin-right: 0.3em;
 }
-/* line 204, ../scss/screen.scss */
+/* line 208, ../scss/screen.scss */
 section.news article.first {
   width: 38.77551%;
   float: left;
   margin-right: 2.04082%;
   display: inline;
 }
-/* line 207, ../scss/screen.scss */
+/* line 211, ../scss/screen.scss */
 section.news article {
   margin-bottom: 0.5em;
   position: relative;
@@ -802,77 +744,108 @@ section.news article {
   *margin-left: -1em;
   display: inline;
 }
-/* line 209, ../scss/screen.scss */
+/* line 213, ../scss/screen.scss */
 section.news article p {
   color: #326464;
 }
-/* line 212, ../scss/screen.scss */
+/* line 216, ../scss/screen.scss */
 section.news article h3 span {
   font-size: 0.7em;
 }
-/* line 218, ../scss/screen.scss */
+/* line 222, ../scss/screen.scss */
 section.news article span.more {
   position: absolute;
   bottom: 1em;
-  right: -6em;
+  right: -8em;
   font-size: 0.9em;
   -webkit-transition: right 0.5s;
   -moz-transition: right 0.5s;
   -o-transition: right 0.5s;
   transition: right 0.5s;
 }
-/* line 227, ../scss/screen.scss */
+/* line 231, ../scss/screen.scss */
 section.news article:hover h3 {
   color: #3891e2;
 }
-/* line 229, ../scss/screen.scss */
+/* line 233, ../scss/screen.scss */
 section.news article:hover h3 span {
   color: #e29138;
 }
-/* line 233, ../scss/screen.scss */
+/* line 237, ../scss/screen.scss */
 section.news article:hover span.more {
   right: 1em;
 }
 
-/* line 239, ../scss/screen.scss */
+/* line 243, ../scss/screen.scss */
 section {
   margin-bottom: 1em;
   border-bottom: 0.3em solid rgba(0, 0, 0, 0.1);
 }
-/* line 245, ../scss/screen.scss */
+/* line 249, ../scss/screen.scss */
 section div.f figure {
   width: 55%;
   margin: 1em auto;
 }
-/* line 249, ../scss/screen.scss */
+/* line 253, ../scss/screen.scss */
 section div.f figure img {
   max-width: 100%;
 }
 
-/* line 256, ../scss/screen.scss */
+/* line 260, ../scss/screen.scss */
 section:after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* line 263, ../scss/screen.scss */
+/* line 267, ../scss/screen.scss */
 footer {
   font-size: 0.8em;
   margin-bottom: 1em;
   text-align: right;
 }
-/* line 267, ../scss/screen.scss */
-footer img {
-  opacity: 0.7;
-  margin-left: 0.5em;
-}
 /* line 271, ../scss/screen.scss */
-footer img:hover {
+footer a {
+  opacity: 0.7;
+}
+/* line 272, ../scss/screen.scss */
+footer a.google {
+  content: url("../img/gg.png");
+}
+/* line 275, ../scss/screen.scss */
+footer a.facebook {
+  content: url("../img/fb.png");
+}
+/* line 278, ../scss/screen.scss */
+footer a.github {
+  content: url("../img/github.png");
+}
+/* line 281, ../scss/screen.scss */
+footer a.linkedin {
+  content: url("../img/linkedin.png");
+}
+/* line 285, ../scss/screen.scss */
+footer a.google:hover {
+  content: url("../img/ggh.png");
+  opacity: 1;
+}
+/* line 289, ../scss/screen.scss */
+footer a.facebook:hover {
+  content: url("../img/fbh.png");
+  opacity: 1;
+}
+/* line 293, ../scss/screen.scss */
+footer a.github:hover {
+  content: url("../img/github.png");
+  opacity: 1;
+}
+/* line 297, ../scss/screen.scss */
+footer a.linkedin:hover {
+  content: url("../img/linkedinh.png");
   opacity: 1;
 }
 
-/* line 280, ../scss/screen.scss */
+/* line 307, ../scss/screen.scss */
 .presentation div {
   width: 18.36735%;
   float: right;
@@ -881,7 +854,7 @@ footer img:hover {
   display: inline;
   margin-bottom: 1em;
 }
-/* line 282, ../scss/screen.scss */
+/* line 309, ../scss/screen.scss */
 .presentation div img {
   max-width: 100%;
   box-shadow: 0px 0px 8px;
@@ -891,7 +864,7 @@ footer img:hover {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 285, ../scss/screen.scss */
+/* line 312, ../scss/screen.scss */
 .presentation p, .presentation h2 {
   width: 79.59184%;
   float: left;
@@ -901,25 +874,25 @@ footer img:hover {
   margin-bottom: 1em;
 }
 
-/* line 292, ../scss/screen.scss */
+/* line 319, ../scss/screen.scss */
 .presentation:after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* line 299, ../scss/screen.scss */
+/* line 326, ../scss/screen.scss */
 .competences h2 {
   margin-bottom: 1em;
 }
-/* line 300, ../scss/screen.scss */
+/* line 327, ../scss/screen.scss */
 .competences article {
   width: 22.85714%;
   float: left;
   margin-right: 2.04082%;
   display: inline;
 }
-/* line 302, ../scss/screen.scss */
+/* line 329, ../scss/screen.scss */
 .competences article:nth-child(4) {
   float: right;
   margin-right: 0;
@@ -927,27 +900,27 @@ footer img:hover {
   display: inline;
 }
 
-/* line 309, ../scss/screen.scss */
+/* line 336, ../scss/screen.scss */
 form ul li:after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 314, ../scss/screen.scss */
+/* line 341, ../scss/screen.scss */
 form ul li {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   width: 100%;
   float: left;
   margin-right: 3.44828%;
   display: inline;
 }
-/* line 318, ../scss/screen.scss */
+/* line 345, ../scss/screen.scss */
 form fieldset {
   border: none;
   margin: 0;
   padding: 0;
 }
-/* line 323, ../scss/screen.scss */
+/* line 350, ../scss/screen.scss */
 form label {
   width: 31.03448%;
   float: left;
@@ -956,7 +929,7 @@ form label {
   text-align: right;
   line-height: 24px;
 }
-/* line 328, ../scss/screen.scss */
+/* line 355, ../scss/screen.scss */
 form input, form textarea {
   width: 64.13793%;
   float: right;
@@ -964,16 +937,42 @@ form input, form textarea {
   *margin-left: -1em;
   display: inline;
 }
-/* line 332, ../scss/screen.scss */
+/* line 359, ../scss/screen.scss */
 form input[type="submit"] {
-  margin-left: 35%;
+  width: 30%;
+  border: none;
+  padding: 0.5em 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 366, ../scss/screen.scss */
+form input[type="submit"]:hover, form input[type="submit"]:focus {
+  background-color: #3891e2;
+  color: white;
 }
 
-/* line 342, ../scss/screen.scss */
-article.blog {
-  width: 69.38776%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1em;
-  display: inline;
+/* line 378, ../scss/screen.scss */
+section.blog article {
+  margin-bottom: 2em;
+  overflow: visible;
+}
+/* line 381, ../scss/screen.scss */
+section.blog article h3:before {
+  content: url("../img/bookmarks.png");
+  position: absolute;
+  left: -1.5em;
+}
+/* line 388, ../scss/screen.scss */
+section.blog article:hover span.comm {
+  color: #3891e2;
+}
+
+/* line 393, ../scss/screen.scss */
+span.comm:before {
+  content: url("../img/bubbles2.png");
+  margin-right: 0.3em;
+}
+
+/* line 398, ../scss/screen.scss */
+span.comm {
+  margin: 1em 0;
 }
