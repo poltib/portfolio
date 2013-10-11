@@ -48,12 +48,9 @@ h6      { font-size: 0.75em;}
 
 
 #logo{
-	@include span-columns(3,10);
 	margin: 2em 0;
 	text-align: right;
 	h1{margin:0;}
-
-	
 }
 
 header:after{
@@ -83,9 +80,6 @@ header:after{
 }
 
 nav{
-	position:absolute;
-	top:1em;
-	right:1em;
     ul{
 		padding:0;
 		margin:0;
@@ -109,11 +103,6 @@ nav{
 	}
 }
 
-section.hi{
-	div{
-		@include span-columns(6 omega,10);
-	}
-}
 
 section.projects{
 	h2{
@@ -123,22 +112,22 @@ section.projects{
 	// 	content:url('../img/arrow-down-right2.png');
 	// 	margin-right: 0.3em;
 	// }
-	div.text{
-		@include span-columns(3,10);
-	}
+	// .text{
+	// 	@include span-columns(3,10);
+	// }
 	.photos:after{
 		content:"";
 		display:block;
 		clear:both;
 	}
-	.photos-right{
-		@include span-columns(7 omega,10);
-		margin-top: 0.5em;
-	}
+	// .photos-right{
+	// 	@include span-columns(7 omega,10);
+	// 	margin-top: 0.5em;
+	// }
 
-	.photos-left{
-		@include span-columns(3,10);
-	}
+	// .photos-left{
+	// 	@include span-columns(3,10);
+	// }
 
 	div{
 
@@ -187,7 +176,7 @@ section.content{
 	border:0;
 }
 
-section.news{
+.news{
 	h2{
 		margin-bottom: 1em;
 	}
@@ -196,7 +185,7 @@ section.news{
 		margin-right: 0.3em;
 	}
 	article.first{
-		@include span-columns(4,10);
+		//@include span-columns(4,10);
 	}
 	article{
 		margin-bottom: 0.5em;
@@ -208,7 +197,7 @@ section.news{
 		}
 		position: relative;
 		overflow:hidden;
-		@include span-columns(6 omega,10);
+		//@include span-columns(6 omega,10);
 		span.more{
 			position:absolute;
 			bottom:1em;
@@ -303,12 +292,12 @@ footer{
 
 .presentation{
 	div{
-		@include span-columns(2 omega,10);
+		@include span-columns(4 omega,10);
 		img{max-width: 100%;box-shadow: 0px 0px 8px;@include border-radius(100%);}
 		margin-bottom: 1em;
 	}
 	p,h2{
-		@include span-columns(8,10);
+		//@include span-columns(8,10);
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
@@ -330,9 +319,10 @@ form{
 		display:block;
 		clear:both;
 	}
+	ul{list-style-type: none;}
 	ul li{
 		margin-bottom: 1em;
-		@include span-columns(6,6);
+		//@include span-columns(6,6);
 	}
 	fieldset{
 		border:none;
@@ -340,12 +330,12 @@ form{
 		padding:0;
 	}
    label{
-   	@include span-columns(2,6);
+   	//@include span-columns(2,6);
    	text-align: right;
    	line-height: 24px;
    }
    input, textarea{
-   	@include span-columns(3.9 omega,6);
+   	//@include span-columns(3.9 omega,6);
    	
    }
    input[type="submit"]{
@@ -393,9 +383,15 @@ section.blog{
 }
 
 
+#position:before{
+		content:url('../img/redo2.png');
+		margin-right: 0.3em;
+	}
+
+
 //comments
 
-div.comments{
+.comments{
 	border-top: 0.3em solid rgba(0,0,0,0.1);
 	h4{margin:1em 0;}
 
@@ -443,7 +439,7 @@ li.comment{
 		position: relative;
 		a{	
 			position:absolute;
-			top:1em;
+			top:0;
 			right:1em;
 			text-align:right;
 			background-color:rgba(226,145,56,0.6);
@@ -453,11 +449,11 @@ li.comment{
 		a:hover{
 			background-color:rgba(226,145,56,1);
 		}
-		@include span-columns(6,12);
-		&:nth-child(2n) { @include omega; }
+		// @include span-columns(6,12);
+		// &:nth-child(2n) { @include omega; }
 		border-bottom: 0.3em solid rgba(0,0,0,0.1);
 		figure{
-			@include span-columns(3,6);
+			//@include span-columns(3,6);
 			img{
 				max-width: 96%;
 				border: 0.3em solid rgba(0,0,0,0.1);
@@ -475,11 +471,6 @@ li.comment{
 		p:first-child{
 			margin-top: 0;
 		}
-		figure{
-			position:absolute;
-			left:0;
-			@include span-columns(4,10);
-		}
 		img{
 			max-width: 98%;
 			border: 0.3em solid rgba(0,0,0,0.1);
@@ -491,4 +482,111 @@ li.comment{
 		clear:both;
 	}
 }
-.description{@include span-columns(6 omega,10);}
+
+@include at-breakpoint($mobile){ 
+	div#logo{
+		@include span-columns(10,10);
+	}
+	nav{
+		position:static;
+		margin-bottom: 1em;
+		ul li{
+			@include span-columns(10,10);
+		}
+	}
+	div.text, div.photos-right, div.photos-left{
+		@include span-columns(10,10);
+	}
+	.description{
+		@include span-columns(10,10);
+	}
+	.blog article{
+		@include span-columns(9 omega,10);
+	}
+	form{
+		label{@include span-columns(3.5,9);}
+		input, textarea{@include span-columns(5 omega,9);}
+	}
+	#position{
+		position:static;
+	}
+	
+}
+
+@include at-breakpoint($tablet){
+	nav{
+		// position:static;
+		// margin-bottom: 1em;
+		ul li{
+			width:auto;
+		}
+	}
+
+	.hi div.text{@include span-columns(10,10);}
+
+	div.text{
+		@include span-columns(5,10);
+	}
+		div.photos-right, div.photos-left{
+		@include span-columns(5,10);
+		&:nth-child(2n) { @include omega; }
+	}
+
+	.projet{
+		div.text{@include span-columns(10,10);}
+	}
+
+} 
+
+@include at-breakpoint($computer){
+	nav{
+		ul{position:absolute;
+			right:0;
+			@include span-columns(6 omega,10);}
+	}
+	div#logo{
+		@include span-columns(3,10);
+	}
+	.hi div.text{@include span-columns(6 omega,10);}
+	div.text{
+		@include span-columns(3,10);
+	}
+
+	div.photos-right{
+		@include span-columns(7 omega,10);
+		margin-top: 0.5em;
+	}
+
+	div.photos-left{
+		@include span-columns(3,10);
+	}
+
+	.projets{
+		article{ @include span-columns(6,12);
+		&:nth-child(2n) { @include omega; }}
+		figure{@include span-columns(3,6);}
+	}
+
+	.projet{
+		div.text{@include span-columns(6 omega,10);}
+		figure{
+			position:absolute;
+			left:0;
+			@include span-columns(4,10);
+		}
+	}
+	.blog article{
+		@include span-columns(6 omega,10);
+	}
+
+	#position{
+		position:fixed;
+	}
+
+	.news{
+		article.first{@include span-columns(4,10);}
+		article{@include span-columns(6 omega,10);}
+	}
+
+
+}
