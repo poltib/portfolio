@@ -25,7 +25,6 @@
 			<?php endif; ?>
 </footer>
 </div>
-<script src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
 <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

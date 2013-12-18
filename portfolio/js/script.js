@@ -92,18 +92,6 @@ google.maps.event.addDomListener(window, 'load', loadMap);
 //THE MAIN FUNCTION THAT IS CALLED WHEN THE WEB PAGE LOADS--------------------------------------------------------------------------------
 function loadMap() {
 
-
-var elementPosition = $('#position').offset();
-
-$(window).scroll(function(){
-        if($(window).scrollTop() > elementPosition.top){
-              $('#position').css('position','fixed').css('top','0');
-        } else {
-            $('#position').css('position','static');
-        }    
-});
-
-
 var mapCenter = new google.maps.LatLng( 50.633333, 5.566667);
 
 var mapOptions = { 
