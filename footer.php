@@ -11,7 +11,7 @@
 			  <!-- the loop -->
 			  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 					<li>
-			    	<a href="<?php the_field('lien') ?>" class="<?php the_field('nom') ?>" title="<?php the_title() ?>"></a>
+			    		<a href="<?php the_field('lien') ?>" class="social <?php the_field('nom') ?>" title="<?php the_title() ?>"><i class="<?php the_field('nom_icon') ?>"></i></a>
 					</li>
 			  <?php endwhile; ?>
 			  <!-- end of the loop -->
@@ -25,12 +25,6 @@
 			<?php endif; ?>
 </footer>
 </div>
-<script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src='//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHJ3p-sn1Y5tJGrzH9MF5cbR5sdsDmhfg&sensor=true"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/prism.js"></script>

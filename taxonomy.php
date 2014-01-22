@@ -11,10 +11,9 @@
 	<?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
       <article role="article">
-        <h3 role="heading" aria-level="3"><?php the_title(); ?> <span><time date="<?php the_time('Y-m-d') ?>" pubdate><?php echo(get_the_date()) ?></time></span></h3>
+        <a href="<?php the_permalink(); ?>"><h3 role="heading" aria-level="3"><?php the_title(); ?> <span><time date="<?php the_time('Y-m-d') ?>" pubdate><?php echo(get_the_date()) ?></time></span></h3></a>
         <figure><img src="<?php the_field('image_section_une'); ?>" alt="<?php the_title(); ?>"></figure>
         <div><?php the_field('texte_section_une'); ?></div>
-          <a class="detail" href="<?php the_permalink(); ?>">Détails sur ce projet</a>
         <div><?php the_terms( $post->ID, 'Competence', 'Technologies: ', ' / ' ); ?></div>
         
       </article>

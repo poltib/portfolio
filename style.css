@@ -569,35 +569,6 @@ header:after {
   clear: both;
 }
 
-/* line 61, ../scss/screen.scss */
-[title="contact"]:before {
-  content: url("img/envelop.png");
-  margin-right: 0.3em;
-}
-
-/* line 65, ../scss/screen.scss */
-[title="blog"]:before {
-  content: url("img/book.png");
-  margin-right: 0.3em;
-}
-
-/* line 69, ../scss/screen.scss */
-[title="projets"]:before {
-  content: url("img/pencil.png");
-  margin-right: 0.3em;
-}
-
-/* line 73, ../scss/screen.scss */
-[title="home"]:before {
-  content: url("img/home.png");
-  margin-right: 0.3em;
-}
-
-/* line 77, ../scss/screen.scss */
-[title="about"]:before {
-  content: url("img/profile.png");
-  margin-right: 0.3em;
-}
 
 /* line 83, ../scss/screen.scss */
 nav ul {
@@ -611,7 +582,7 @@ nav ul li {
 /* line 88, ../scss/screen.scss */
 nav ul li a {
   color: black;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.9em;
   display: block;
   text-decoration: none;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
@@ -700,10 +671,7 @@ section.content {
   margin-bottom: 1em;
 }
 /* line 183, ../scss/screen.scss */
-.newsPosts:before {
-  content: url("img/books.png");
-  margin-right: 0.3em;
-}
+
 /* line 190, ../scss/screen.scss */
 .news article {
   margin-bottom: 0.5em;
@@ -788,47 +756,52 @@ footer li{
 /* line 250, ../scss/screen.scss */
 footer ul li a{
 
-  margin-left: 1.5em;
-  opacity: 0.7;
-  width: 32px;
-  height: 32px;
+  margin-left: 0.1em;
   display: inline-block;
   border-bottom: 0;
 }
 /* line 258, ../scss/screen.scss */
-footer .google {
-  background-image: url("img/gg.png");
+ .social {
+  font-size: 2.5em;
+  opacity: 0.7;
+  border: none;
 }
-/* line 262, ../scss/screen.scss */
-footer .facebook {
-  background-image: url("img/fb.png");
+
+.partage-google{
+  color:rgb(216,69,26);
 }
-/* line 265, ../scss/screen.scss */
-footer .github {
-  background-image: url("img/github.png");
+
+.partage-facebook{
+  color:rgb(71,110,177);
 }
-/* line 268, ../scss/screen.scss */
-footer .linkedin {
-  background-image: url("img/linkedin.png");
+
+.partage-twitter{
+  color:#3891e2;
 }
+
+.twitter:hover{
+  opacity:1;
+}
+
+
 /* line 272, ../scss/screen.scss */
-footer .google:hover {
-  background-image: url("img/ggh.png");
+ .google:hover {
+  color:rgb(216,69,26);
   opacity: 1;
 }
 /* line 276, ../scss/screen.scss */
-footer .facebook:hover {
-  background-image: url("img/fbh.png");
+ .facebook:hover {
+  color:rgb(71,110,177);
   opacity: 1;
 }
 /* line 280, ../scss/screen.scss */
-footer .github:hover {
-  background-image: url("img/github.png");
+ .github:hover, .mail:hover {
+  color:black;
   opacity: 1;
 }
 /* line 284, ../scss/screen.scss */
-footer .linkedin:hover {
-  background-image: url("img/linkedinh.png");
+ .linkedin:hover {
+  color: rgb( 0,132,178);
   opacity: 1;
 }
 
@@ -950,10 +923,7 @@ section.blog article {
 
 
 /* line 376, ../scss/screen.scss */
-.comm:before {
-  content: url("img/bubbles2.png");
-  margin-right: 0.3em;
-}
+
 
 /* line 381, ../scss/screen.scss */
 .comm {
@@ -991,8 +961,13 @@ li.comment article {
 }
 /* line 409, ../scss/screen.scss */
 li.comment article h5 {
+  margin-top: 0.1em;
   margin-bottom: 0.1em;
 }
+li.comment article p{
+  margin:0;
+}
+
 /* line 411, ../scss/screen.scss */
 li.comment article h5 a {
   border-bottom: 1px dotted silver;
@@ -1065,9 +1040,14 @@ li.comment article > a:hover {
   margin-top: 0;
 }
 /* line 474, ../scss/screen.scss */
-.projet article figure>img {
+.projet article figure a>img {
   max-width: 98%;
   border: 0.3em solid rgba(0, 0, 0, 0.1);
+  transition: border 0.5s;
+}
+
+.projet article figure a>img:hover {
+  border: 0.3em solid rgba(0, 0, 0, 0.8);
 }
 /* line 479, ../scss/screen.scss */
 .projet article:after {
@@ -1126,22 +1106,7 @@ time{
   margin-bottom: 0.5em;
 }
 
-.fn:before {
-  content: url("img/user.png");
-  margin-right: 0.3em;
-}
-.email:before {
-  content: url("img/envelop.png");
-  margin-right: 0.3em;
-}
-.tel:before {
-  content: url("img/phone.png");
-  margin-right: 0.3em;
-}
-.adr:before {
-  content: url("img/location.png");
-  margin-right: 0.3em;
-}
+
 
 
 .pagination{
@@ -1171,10 +1136,7 @@ time{
 }
 
 /* line 386, ../scss/screen.scss */
-#position>a:before {
-  content: url("img/redo2.png");
-  margin-right: 0.3em;
-}
+
 
 #position>a{
   margin-left: 1em;
@@ -1197,11 +1159,9 @@ time{
 }
 
 .categories h3{
-  text-align: center;
   margin-top: 0;
   font-weight: lighter;
-  padding: 1em 1em 0.6em;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 1em 0 0.6em;
 }
 
 .post-categories li{
@@ -1220,18 +1180,6 @@ time{
   position:relative;
 }
 
-.partage{
-  display:inline-block;
-  border:none;
-  opacity:0.7;
-  margin-right: 0.3em;
-  transition: opacity 0.5s;
-}
-
-.partage:hover{
-  opacity:1;
-}
-
 
 #map{
   float:left;
@@ -1244,6 +1192,33 @@ nav:after{
   content:"";
   display:block;
   clear:both;
+}
+
+#svgAnim{
+  position: relative;
+}
+
+svg{
+  max-width: 100%;
+  }
+
+
+
+#rerun{
+  border: 1px solid rgb(50,100,100);
+  color: color:rgb(50,100,100);
+  text-align: center;
+  padding:0.2em;
+  margin-bottom: 0.5em;
+  opacity:0.1;
+  transition: opacity 0.5s;
+}
+
+#rerun:hover{
+  opacity:1;
+  cursor:pointer;
+  color:#3891e2;
+  border-color: #3891e2;
 }
 
 @media (min-width: 13.3125em) {
@@ -1379,6 +1354,20 @@ nav:after{
     float: left;
     margin-right: 2.04082%;
   }
+  
+     /* line 550, ../scss/screen.scss */
+  .hi div.text {
+    width: 59.18367%;
+    float: right;
+    margin-right: 0;
+  }
+
+  #svgAnim {
+    width: 38.77551%;
+    float: left;
+    margin-right: 2.04082%;
+  }
+
 }
 
 @media (min-width: 55em) {
@@ -1480,6 +1469,9 @@ nav:after{
 
 }
 @media (min-width: 60.0625em) {
+   /* line 550, ../scss/screen.scss */
+
+
    /* line 550, ../scss/screen.scss */
   .hi div.text {
     width: 59.18367%;

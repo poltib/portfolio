@@ -13,12 +13,27 @@
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="shortcut icon" href="/projets/portfolio/wordpress/favicon.ico" />
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
-        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/prism.css"/>
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/styles/prism.css"/>
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/styles/fontello.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/styles/animation.css">
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/styles/fontello-ie7.css">
+        <![endif]-->
         <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/styles/default.css">
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-45178902-1', 'jeremy-thiry.be');
+          ga('send', 'pageview');
+
+        </script>
     </head>
 <body>
     <!--[if lt IE 7]>
