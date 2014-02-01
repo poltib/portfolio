@@ -6,7 +6,7 @@
 		<?php while(have_posts()): the_post(); ?>
 		<section class="hi">
 			<div id="svgAnim">
-				<div id="rerun">Encore!</div>
+				<div id="rerun">
 				<div id="myobj">
 				<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 width="360px" height="140px" viewBox="0 0 360 140" enable-background="new 0 0 360 140" xml:space="preserve">
@@ -131,7 +131,7 @@
 						C37.218,47.093,38.622,49.289,38.622,53.017z M32.266,53.196c0,3.043,0.937,4.771,2.377,4.771c1.621,0,2.395-1.891,2.395-4.879
 						c0-2.881-0.738-4.771-2.376-4.771C33.275,48.317,32.266,50.009,32.266,53.196z"/>
 				</g>
-				</svg></div>
+				</svg></div></div>
 			</div>
 			<div class="text">
 				<h2 class="post-title" role="heading" aria-level="2">
@@ -144,7 +144,6 @@
 	<?php endif; ?>
 
 			<section class="projects">
-				<div class="text">
 					<?php 
 					// the query
 					$the_query = new WP_Query( array( 'post_type' => 'projets' , 'Genre' => 'intro')  ); ?>
@@ -156,7 +155,6 @@
 					  <!-- the loop -->
 					  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						 	<h2 role="heading" aria-level="2"><?php the_title() ?></h2>
-							<div><?php the_field('texte_section_une') ?></div>
 					  <?php endwhile; ?>
 					  <!-- end of the loop -->
 
@@ -167,11 +165,10 @@
 					<?php else:  ?>
 					  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 					<?php endif; ?>
-				</div>
 
 					<?php 
 					// the query
-					$the_query = new WP_Query( array( 'post_type' => 'projets' , 'Genre' => 'important')  ); ?>
+					$the_query = new WP_Query( array( 'post_type' => 'projets' , 'Genre' => 'projets')  ); ?>
 
 					<?php if ( $the_query->have_posts() ) : ?>
 
@@ -196,37 +193,6 @@
 					<?php else:  ?>
 					  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 					<?php endif; ?>
-
-
-					<?php 
-					// the query
-					$the_query = new WP_Query( array( 'post_type' => 'projets' , 'Genre' => 'moins')  ); ?>
-
-					<?php if ( $the_query->have_posts() ) : ?>
-
-					  <!-- pagination here -->
-						<div class="photos-left">
-					  <!-- the loop -->
-					  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-						
-						 	<a href="<?php the_permalink(); ?>"><figure>
-							<img src="<?php the_field('image_section_une')?>" alt="">
-							<figcaption>
-								<h3 role="heading" aria-level="3"><?php the_title(); ?></h3>
-								<div><?php the_excerpt(); ?></div>
-							</figcaption>
-							</figure></a>
-						
-					  <?php endwhile; ?>
-					  <!-- end of the loop -->
-						</div>	
-					  <!-- pagination here -->
-
-					  <?php wp_reset_postdata(); ?>
-
-					<?php else:  ?>
-					  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-					<?php endif; ?>
 			</section>
 			<section class="news">
 				<?php 
@@ -237,7 +203,7 @@
 
 				  <!-- pagination here -->
 					<div class="newPosts">				  
-					<h2 class="newsPosts" role="heading" aria-level="2"><i class="icon-book"></i> Derniers articles du blog</h2>
+					<h2 class="newsPosts" role="heading" aria-level="2">Derniers articles du blog</h2>
 				<!-- the loop -->
 				  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 				  

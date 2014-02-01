@@ -11,7 +11,7 @@
 	<?php while(have_posts()): the_post(); ?>
 	<section class="hi">
 		<div id="svgAnim">
-				<div id="rerun">Encore!</div>
+				<div id="rerun">
 				<div id="myobj">
 				<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 width="360px" height="140px" viewBox="0 0 360 140" enable-background="new 0 0 360 140" xml:space="preserve">
@@ -170,7 +170,7 @@
 					s2.058,7.954,2.058,7.954L197,17.125l0.75,3.562l-2.5,0.75"/>
 				<path id="i7" fill="none" stroke="#000000" stroke-miterlimit="10" d="M155,139.5h-11c0,0-0.5-6.528-0.434-8.257s17.5-1.737,17.5-1.737
 					l0.1-5.255l-16.969,1.248l0.095-6.756"/>
-				</svg></div>
+				</svg></div></div>
 			</div>
 		<div class="text">
 			<h2 title="contact" role="heading" aria-level="2">

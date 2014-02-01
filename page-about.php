@@ -12,7 +12,7 @@ Template Name: About
 		<?php while(have_posts()): the_post(); ?>
 		<section class="hi">
 			<div id="svgAnim">
-				<div id="rerun">Encore!</div>
+				<div id="rerun">
 				<div id="myobj">
 				<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 width="360px" height="140px" viewBox="0 0 360 140" enable-background="new 0 0 360 140" xml:space="preserve">
@@ -137,7 +137,7 @@ Template Name: About
 						C37.218,47.093,38.622,49.289,38.622,53.017z M32.266,53.196c0,3.043,0.937,4.771,2.377,4.771c1.621,0,2.395-1.891,2.395-4.879
 						c0-2.881-0.738-4.771-2.376-4.771C33.275,48.317,32.266,50.009,32.266,53.196z"/>
 				</g>
-				</svg></div>
+				</svg></div></div>
 			</div>
 			<div class="text">
 				<h2 role="heading" aria-level="2" title="about">

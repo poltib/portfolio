@@ -37,7 +37,7 @@
 	<?php endwhile; ?>
 	<?php endif; ?>
 	<div class="comment">
-		<h4 class="comm">Commentaires</h4>
+		<h4 id="comm" class="comm">Commentaires</h4>
 		<?php comments_template() ?>
 	</div>
 </article>

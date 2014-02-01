@@ -61,7 +61,7 @@ again = document.getElementById('rerun');
 again.addEventListener('click', function(){
   var old = document.getElementById('myobj');
   old.parentNode.removeChild(old);
-  document.getElementById('svgAnim').appendChild(myobj);
+  document.getElementById('rerun').appendChild(myobj);
   init();
   draw();
 });
